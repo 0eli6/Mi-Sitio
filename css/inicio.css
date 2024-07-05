@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'HARRYP';
+    src: url(../font/HARRYP.TTF);
+}
+@font-face {
+    font-family: 'coolvetica';
+    src: url(../font/coolvetica.TTF);
+}
+@font-face {
+    font-family: 'Sansita-Regular';
+    src: url(../font/Sansita-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A0F23;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.cabecera {
+    width: 100%;
+    height: 80px;
+    background-color: #293462;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    width: 180px;
+    margin: 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.info_compañia {
+    margin-left: 1rem;
+}
+
+.info_compañia h2 {
+    font-family: 'coolvetica';
+    font-size: 40px;
+    color: #990000;
+}
+
+.info_compañia a {
+    font-family: 'coolvetica';
+    font-size: 20px;
+    color: #35fff5;
+    text-decoration: none;
+}
+
+#links_principales {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#links_principales figure {
+    display: flex;
+    gap: 1rem;
+}
+
+#links_principales img {
+    width: 24px;
+    height: 24px;
+}
+
+.opciones_menu {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'coolvetica';
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(/img/baner.jpg);
+    background-size: cover;
+    background-position: 0px -90px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#contenido_principal {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 3.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #d6bd00;
+    font-family: 'HARRYP';
+}
+
+.parrafo1 {
+    font-size: 1.5em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #ffffff;
+    font-family: 'Sansita-Regular';
+}
+
+#contenido_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#figura1 {
+    margin-right: 1.5rem;
+}
+
+#figura1 .imagen1 {
+    width: 400px;
+    height: auto;
+}
+
+#contenido_2 h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 4em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #00d664;
+    font-family: 'HARRYP';
+}
+
+.imagenes figure {
+    margin: 0; /* Elimina el margen predeterminado de las figuras si es necesario */
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes horizontalmente */
+    margin-bottom: 1rem; /* Margen inferior entre el bloque de imágenes y los párrafos */
+}
+
+.imagenes .figura {
+    flex: 1; /* Las figuras se expanden para ocupar el espacio disponible */
+    margin-right: 1rem; /* Espacio entre las figuras */
+}
+
+.imagenes .figura img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.parrafo {
+    margin: 10px;
+    color: #cbcbcb;
+    font-family: 'Sansita-Regular';
+    padding: 0;
+    font-size: 1.2em;
+}
+
+#contenido_secundario{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.video {
+    margin-top: 40px;
+    
+}
+
+.texto_secundario{
+    font-size: 1.3rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #c00000;
+    font-family: 'Sansita-Regular';
+}
+
+.contenido_textos h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 4em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #00a8d6;
+    font-family: 'HARRYP';
+}
+
+.lista{
+    text-align: center;
+    text-decoration: none;
+    color: #df468b;
+    list-style: none;
+    margin-top: 0px;
+    font-size: 1.1em;
+    font-family: 'Sansita-Regular';
+}
+
+.opciones_menu{
+    display: inline-block; /*los aline como tren*/
+    text-decoration: none;
+    color: #f1f1f1;
+    margin: 0 1.5rem;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu_principal  a:hover:not(#desplegar){ /*va a aplicar a todos lo a exepto a*/
+    color: #ffff;
+    border-bottom: 6px solid #fff;
+}
+
+#menu_principal #desplegar{
+    display: none; /*oculta el icono, para que solo se vea para celular*/
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #293462;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    font-size: 1.2rem;
+}
+
+.botones button{
+    width: 70px;
+    max-width: 70px;
+    height: 40px;
+    border-radius: 80px;
+    background-color: #dad428;
+    border: none;
+    font-size: 30px;
+    font-weight: 900;
+    transition: background-color 0.5s;
+    font-family: 'HARRYP';
+}
+
+button:hover {
+    background-color: #f2a964;
+}   
+
+
+/*NAVEGACION*/
+
+#navegacion {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 1rem 0;/* Añade un poco de relleno para separación */
+    background-color: #1B1F38;
+}
+
+#menu_principal {
+    display: flex;/* Usa flexbox para el menú principal */
+    gap: 1.5rem; /* Espacio entre las opciones del menú */
+}
+
+.opciones_menu {
+    color: #32cfff;
+    text-decoration: none;
+    font-family: 'Sansita-Regular';
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s; /* Transición suave */
+}
+
+.opciones_menu:hover:not(#desplegar) {
+    color: #ffffff;
+    border-bottom: 6px solid #fff;
+}
+
+/* Haz que el menú principal se ajuste a la pantalla cuando sea necesario */
+#menu_principal #desplegar {
+    display: none; /* Oculta el icono del menú en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    #todo{
+        display: block;
+    }
+    #contenido_secundario{
+        p{
+            display: none;
+        }
+    }
+    #contenido_principal .parrafo{
+        display: none;
+    }
+    #menu_principal #desplegar {
+        display: block; /* Muestra el icono del menú en pantallas pequeñas */
+    }
+}
+
